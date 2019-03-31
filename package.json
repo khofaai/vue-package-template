@@ -1,0 +1,40 @@
+{
+  "name": "[package-name]",
+  "main": "dist/[package-name].js",
+  "version": "0.3.0",
+  "description": "[package description]",
+  "author": "[author-name]",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "serve": "webpack-dev-server --mode development",
+    "build": "npm run clean && webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[user-name]/[package-name]"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "rimraf": "^2.6.3",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "khofaai",
+    "[package-name]",
+  ],
+  "files": [
+    "dist"
+  ]
+}
